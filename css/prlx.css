@@ -1,0 +1,73 @@
+.prlx {
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.prlx .background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1136px;
+    z-index: -1;
+    background: url(../img/firstscreen.png) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.prlxoff {
+    width: 1530px;
+    margin: auto;
+    height: 1500px;
+}
+
+#scene .layer:nth-child(1) {
+    width: 634.54px;
+    height: 825.37px;
+    left: 34.64% !important;
+    top: 235px !important;
+}
+
+#scene .layer:nth-child(2) {
+    width: 1275px;
+    height: 1101px;
+    left: 23.334% !important;
+    top: 116px !important;
+}
+
+#scene .layer:nth-child(3) {
+    width: 1243px;
+    height: 1005px;
+    left: 23.856% !important;
+    top: 300px !important;
+}
+
+#scene .layer:nth-child(4) {
+    width: 961px;
+    height: 1171px;
+    left: 34.97% !important;
+    top: 4px !important;
+}
+
+#scene .layer:nth-child(5) {
+    width: 1189px;
+    height: 834.5px;
+    left: 21.111% !important;
+    top: 273px !important;
+}
+
+#scene .layer:nth-child(6) {
+    width: 545.5px;
+    height: 354px;
+    left: 60.784% !important;
+    top: 637px !important;
+}
+
+.prlx-img {
+    width: 100%;
+    height: auto;
+}

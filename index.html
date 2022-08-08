@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/prlx.css">
+    <link rel="stylesheet" href="./css/firstscreen.css">
 </head>
 <body>
 
+<div id="mainscreen">
+    <div class="prlx">
+        <div class="background"></div>
+        <div class="prlxoff">
+            <ul id="scene" class="scene">
+                <li class="layer" data-depth="0.7"><img class="prlx-img" src="./img/prlx/1.png" alt=""></li>
+                <li class="layer" data-depth="0.45"><img class="prlx-img" src="./img/prlx/2.png" alt=""></li>
+                <li class="layer" data-depth="-0.20"><img class="prlx-img" src="./img/prlx/3.png" alt=""></li>
+                <li class="layer" data-depth="0.20"><img class="prlx-img" src="./img/prlx/4.png" alt=""></li>
+                <li class="layer" data-depth="0.30"><img class="prlx-img" src="./img/prlx/5.png" alt=""></li>
+                <li class="layer" data-depth="-0.43"><img class="prlx-img" src="./img/prlx/6.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./js/jquery.js" charset="utf-8"></script>
+<script src="./js/jquery.parallax.js"></script>
+<script>
+    $('#scene').parallax();
+    $('document').ready(function () {
+
+        function longLoad() {
+            $('.link').on('click', function () {
+                var target = this.hash,
+                    $target = $(target);
+
+                $('html, body').animate({
+                    'scrollTop': $target.offset().top
+                }, 1000)
+            });
+        }
+
+        longLoad();
+
+    });
+
+</script>
 </body>
 </html>
