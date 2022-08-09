@@ -7,6 +7,7 @@
 
 body {
     background: #0D0E10;
+    color: white;
 }
 
 .container {
@@ -25,9 +26,29 @@ body {
     transition: 1.2s;
 }
 
+.animblocks {
+    transform: translate(0, 100%);
+    transition: 2.5s;
+}
+
+.animblocks1 {
+    transform: translate(0, 115%);
+    transition: 3s;
+}
+
+.animblocks2 {
+    transform: translate(0, 120%);
+    transition: 3.5s;
+}
+
+.animblocks3 {
+    transform: translate(0, 130%);
+    transition: 4s;
+}
+
 .anim2 {
     transform: translate(0, 80%);
-    transition: 1.4s;
+    transition: 2.4s;
 }
 
 .animleft {
@@ -35,8 +56,13 @@ body {
     transition: 1s;
 }
 
+.animrightlow {
+    transform: translate(80%, 0);
+    transition: 1.2s;
+}
+
 .animright {
-    transform: translate(60%, 0);
+    transform: translate(60%, 50%);
     transition: 1.2s;
 }
 

@@ -1,0 +1,68 @@
+#rocket .blocks {
+    margin-top: 225px;
+    background: url("../img/rocketbackground.png") no-repeat;
+    background-position: center;
+    background-size: inherit;
+    z-index: -10;
+
+    height: 857px;
+    position: relative;
+}
+
+#rocket .container {
+    display: grid;
+    grid-template-columns: 350px auto 350px;
+}
+
+#rocket {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.rocket {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 1700px;
+    z-index: -2;
+}
+
+.rocket img {
+    margin: auto;
+    width: 450px;
+}
+
+#rocket .block {
+    width: 292px;
+    height: 170px;
+    padding: 0px 33px 25px;
+
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 14px 19px 52px -5px rgba(0, 0, 0, 0.07),
+    0 1px 2px -1px gold inset;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 25px;
+    margin-bottom: 132px;
+}
+
+#rocket .block p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#rocket .block span {
+    display: block;
+    margin-top: -63px;
+}
+
+#rocket .block p span {
+    font-weight: 550;
+    margin-top: 0;
+    display: contents;
+}
