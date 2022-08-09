@@ -8,3 +8,148 @@
 body {
     background: #0D0E10;
 }
+
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(60%) ;
+    transition: 1s;
+}
+
+.anim.show {
+    opacity: 1;
+    transform: translateY(0%) ;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    src: local('Montserrat'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.ttf');
+    src: local('Montserrat'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
+    src: local('Montserrat'),
+    url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/Bebas Neue Cyrillic.ttf');
+    src: local('Bebas Neue'),
+    url('../fonts/Bebas Neue Cyrillic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/Bebas Neue Cyrillic.ttf');
+    src: local('Bebas Neue'),
+    url('../fonts/Bebas Neue Cyrillic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.otf');
+    src: local('Gilroy'),
+    url('../fonts/Gilroy-Light.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.otf');
+    src: local('Gilroy'),
+    url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.btn:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn 3s ease-in-out infinite;
+}
+.btn {
+    display: inline-block;
+    padding: 17px 21px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+
+    background: linear-gradient(87.87deg, #E6A705 25.33%, #F8B88A 74.36%);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.95;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .9;
+    color: #FFFFFF;
+}
+
+.btn:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+    -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+@keyframes shiny-btn {
+    0% {
+        transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+

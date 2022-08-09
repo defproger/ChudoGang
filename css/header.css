@@ -1,0 +1,94 @@
+header {
+    width: calc(100% - 25px);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-left: 25px;
+    z-index: 100;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hiddennav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    transition: .3s;
+}
+header nav a:hover {
+    color: #FF7A2F;
+
+}
+
+
+.header__logo img {
+    width: 66px;
+    height: 39px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 24px;
+    z-index: 12;
+}
+
+.burger div {
+    width: 30px;
+    height: 1px;
+    background-color: #FFFFFF;
+    border: .1px solid #FFFFFF;
+    margin: 5px;
+    transition: all .3s ease;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+    transform: translate(-50px, 0);
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes navLinkShow {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

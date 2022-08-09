@@ -1,0 +1,73 @@
+#line {
+    max-width: 1530px;
+    height: 464px;
+    background: rgba(12, 12, 12, 0.7);
+    box-shadow: 9px 30px 44px rgba(0, 0, 0, 0.35),
+    0 1px 2px -1px gold inset;
+    backdrop-filter: blur(75px);
+    -webkit-backdrop-filter: blur(75px);
+    border-radius: 23px;
+
+    margin: auto;
+    margin-top: 185px;
+    color: white;
+    padding: 57px;
+}
+
+#line h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#line .blocks {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#line .block {
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 14px 19px 52px -5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    padding: 40px;
+    margin: 0 20px;
+
+    width: 296px;
+    height: 196px;
+}
+
+#line .block-name {
+    margin-top: -90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.block-name h1 {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.block-name img {
+    height: 140px;
+    width: auto;
+    margin: 0 25px;
+}
+
+#line .block p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 47px;
+}

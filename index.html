@@ -4,11 +4,77 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/prlx.css">
     <link rel="stylesheet" href="./css/firstscreen.css">
+    <link rel="stylesheet" href="./css/line.css">
 </head>
 <body>
+<!--header-->
+<div class="container">
+    <header>
 
+        <div class="header__logo"><img src="./img/logo.png" alt=""></div>
+
+        <div class="hiddennav">
+            <nav>
+                <a href="#bigblock">ОБ АВТОРЕ</a>
+                <a href="#accordion">ПРОГРАММА</a>
+                <a href="#score">ЧТО Я ПОЛУЧУ</a>
+                <a href="#info">FAQ</a>
+                <a href="" class="btn">ЗАБРОНИРОВАТЬ МЕСТО</a>
+            </nav>
+        </div>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+</div>
+<script>
+    const navSlide = () => {
+        const burger = document.querySelector('.burger')
+        const nav = document.querySelector('.hiddennav')
+        const navLinks = document.querySelectorAll('header nav a')
+        let checker = true;
+
+        burger.addEventListener('click', () => {
+            // Toggle nav
+            checker = !checker;
+
+            setTimeout(() => {
+                nav.classList.toggle('active')
+            }, (checker ? (navLinks.length * 200) : 0))
+
+            // Animate Links
+            navLinks.forEach((link, index) => {
+                if (checker) {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    setTimeout(() => {
+                        link.style.opacity = '0'
+                    }, (0.5 + (index / 7 + 0.5)) * 1000)
+                } else {
+                    link.style.animation = `navLinkShow 0.5s ease forwards ${index / 7 + 0.5}s`
+                    setTimeout(() => {
+                        link.style.opacity = '1'
+                    }, (0.5 + (index / 7 + 0.5)) * 1000)
+
+                }
+            })
+            //Burger Animation
+            burger.classList.toggle('toggle')
+            // Off Scroll
+            document.body.classList.toggle('_lock')
+        });
+
+
+    }
+
+    navSlide();
+</script>
+<!--main screen-->
 <div id="mainscreen">
     <div class="prlx">
         <div class="background"></div>
@@ -23,10 +89,69 @@
             </ul>
         </div>
     </div>
+    <div class="texts container">
+        <h3>Дата начала: <span>20 ИЮНЯ, 2022</span></h3>
+        <h1>Научись зарабатывать <br>
+            <span>от 2000$ за 30 дней</span> <br>
+            с любой точки мира! <br>
+        </h1>
+        <h2>Обучение у ментеров, которые управляют <br>
+            активами институциональных инвесторов</h2>
+        <div class="btn">Забронировать место</div>
+    </div>
+</div>
+<!--line screen-->
+<div id="line">
+    <h1>КОму подойдет курс?</h1>
+    <div class="blocks container">
+        <div class="block">
+            <div class="block-name">
+                <h1>Baby</h1>
+                <img src="./img/baby.png" alt="" style="transform: translateY(15px); height: 155px;">
+            </div>
+            <p>Насмотрелся картинок в интернете не
+                имея представления, что и как. Представляет красивую жизнь с быстрым результатом.</p>
+        </div>
+        <div class="block">
+            <div class="block-name">
+                <h1>Junior</h1>
+                <img src="./img/junior.png" alt="">
+            </div>
+            <p>Вы имеете представление и проходили другие обучения, остались не довольны. Имеете позитивную динамику, но
+                с переменным
+                успехом.</p>
+        </div>
+        <div class="block">
+            <div class="block-name">
+                <h1>Daddy</h1>
+                <img src="./img/dady.png" alt="">
+            </div>
+            <p>вы знаете что к чему и имеете большой
+                успех, но хотите
+                делиться и получать знания от других трейдеров.</p>
+        </div>
+    </div>
 </div>
 
+<script>
+    function onEntry(entry) {
+        entry.forEach(change => {
+            if (change.isIntersecting) {
+                change.target.classList.add('show');
+            }
+        });
+    }
 
+    let options = {
+        threshold: [0.5]
+    };
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll('.anim');
 
+    for (let elm of elements) {
+        observer.observe(elm);
+    }
+</script>
 <script src="./js/jquery.js" charset="utf-8"></script>
 <script src="./js/jquery.parallax.js"></script>
 <script>
@@ -45,6 +170,13 @@
         }
 
         longLoad();
+
+        $(window).on('scroll', function () {
+            var wHeight = $(window).height() - 100;
+            var scrollTop = $(window).scrollTop() - 100;
+            $('.rocket').css('transform', 'translate3d(0px, -' + (scrollTop - wHeight) + 'px , 0px)');
+
+        });
 
     });
 
