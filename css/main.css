@@ -16,13 +16,33 @@ body {
 
 .anim {
     opacity: 0;
-    transform: translateY(60%) ;
+    transform: translate(0, 60%);
     transition: 1s;
+}
+
+.anim1 {
+    transform: translate(0, 70%);
+    transition: 1.2s;
+}
+
+.anim2 {
+    transform: translate(0, 80%);
+    transition: 1.4s;
+}
+
+.animleft {
+    transform: translate(-80%, 0);
+    transition: 1s;
+}
+
+.animright {
+    transform: translate(60%, 0);
+    transition: 1.2s;
 }
 
 .anim.show {
     opacity: 1;
-    transform: translateY(0%) ;
+    transform: translate(0, 0);
 }
 
 @font-face {
@@ -98,6 +118,7 @@ body {
     background-color: #fff;
     animation: shiny-btn 3s ease-in-out infinite;
 }
+
 .btn {
     display: inline-block;
     padding: 17px 21px;

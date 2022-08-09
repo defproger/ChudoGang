@@ -1,0 +1,42 @@
+#exp {
+    position: relative;
+    width: 100%;
+    height: 910px;
+    margin-top: -340px;
+    color: white;
+}
+
+#exp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    z-index: -1;
+    background: url(../img/expbackground.png) no-repeat;
+    mix-blend-mode: luminosity;
+    background-size: 100%;
+    background-position-y: bottom;
+}
+
+#exp .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#exp .texts {
+    margin-bottom: 46px;
+}
+
+#exp img {
+    max-width: 810px;
+    height: auto;
+}
+
+#exp .bodytext {
+    font-size: 18px;
+    font-weight: 300;
+}

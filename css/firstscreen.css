@@ -1,9 +1,9 @@
-.texts {
+#mainscreen .texts {
     margin-top: 72px;
     color: #FFFFFF;
 }
 
-.texts h3 {
+#mainscreen.texts h3 {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 400;
@@ -12,7 +12,7 @@
     margin-left: 27px;
 }
 
-.texts h3 span {
+#mainscreen .texts h3 span {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
@@ -20,7 +20,7 @@
     line-height: 12px;
 }
 
-.texts h1  {
+.titletext  {
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 700;
@@ -30,11 +30,11 @@
     margin: 37px 0;
 }
 
-.texts h1 span {
+.titletext span {
     color: #FFAB34;
 }
 
-.texts h2 {
+.bodytext {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -42,6 +42,6 @@
     line-height: 33px;
 }
 
-.texts .btn {
+#mainscreen .texts .btn {
     margin-top: 40px;
 }

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/prlx.css">
     <link rel="stylesheet" href="./css/firstscreen.css">
     <link rel="stylesheet" href="./css/line.css">
+    <link rel="stylesheet" href="./css/expscreen.css">
+    <link rel="stylesheet" href="./css/lineblocks.css">
 </head>
 <body>
 <!--header-->
@@ -91,11 +93,11 @@
     </div>
     <div class="texts container">
         <h3>Дата начала: <span>20 ИЮНЯ, 2022</span></h3>
-        <h1>Научись зарабатывать <br>
+        <h1 class="titletext">Научись зарабатывать <br>
             <span>от 2000$ за 30 дней</span> <br>
             с любой точки мира! <br>
         </h1>
-        <h2>Обучение у ментеров, которые управляют <br>
+        <h2 class="bodytext">Обучение у ментеров, которые управляют <br>
             активами институциональных инвесторов</h2>
         <div class="btn">Забронировать место</div>
     </div>
@@ -104,7 +106,7 @@
 <div id="line">
     <h1>КОму подойдет курс?</h1>
     <div class="blocks container">
-        <div class="block">
+        <div class="block anim">
             <div class="block-name">
                 <h1>Baby</h1>
                 <img src="./img/baby.png" alt="" style="transform: translateY(15px); height: 155px;">
@@ -112,7 +114,7 @@
             <p>Насмотрелся картинок в интернете не
                 имея представления, что и как. Представляет красивую жизнь с быстрым результатом.</p>
         </div>
-        <div class="block">
+        <div class="block anim anim1">
             <div class="block-name">
                 <h1>Junior</h1>
                 <img src="./img/junior.png" alt="">
@@ -121,14 +123,73 @@
                 с переменным
                 успехом.</p>
         </div>
-        <div class="block">
+        <div class="block anim anim2">
             <div class="block-name">
                 <h1>Daddy</h1>
-                <img src="./img/dady.png" alt="">
+                <img src="./img/daddy.png" alt="">
             </div>
             <p>вы знаете что к чему и имеете большой
                 успех, но хотите
                 делиться и получать знания от других трейдеров.</p>
+        </div>
+    </div>
+</div>
+<!--second screen-->
+<div id="exp">
+    <div class="container">
+        <div class="texts anim animleft">
+            <h1 class="titletext">
+                менторы Chudo-Gang <br>
+                имеют опыт <span> свыше <br>
+            5 лет торговли </span>
+            </h1>
+            <p class="bodytext">Опытные проводники в мире трейдинга, которые
+                гарантированно сделают максимум, чтобы вы достигли успеха на бирже.
+            </p>
+            <br>
+            <p class="bodytext">
+                Помните: на короткой дистанции важен
+                хороший старт, на длинной –
+                хороший финиш.</p>
+        </div>
+        <img class="anim animright" src="./img/macbook.png" alt="">
+    </div>
+</div>
+<!--line blocks-->
+<div id="lineblocks">
+    <div class="container">
+        <div class="block">
+            <h1 class="opacitytext">Команда</h1>
+            <span></span>
+            <p class="opacitytext">Максимально надежно –
+                профессиональная команда управляющая активами научит вас зарабатывать во всех 3 состояниях рынка (растущем, падающем, флэте)</p>
+        </div>
+        <div class="block ">
+            <h1 class="opacitytext">Стратегии</h1>
+            <span></span>
+            <p class="opacitytext">Используют торговые стратегии,
+                которые позволяют зарабатывать
+                и на падающем, и на растущем
+                рынке, и в боковике</p>
+        </div>
+        <div class="block ">
+            <h1 class="opacitytext">Профессионалы</h1>
+            <span></span>
+            <p class="opacitytext">Наши менторы - настоящие
+                профессионалы. Люди, который
+                посвятили инвестициям более
+                18 лет, успешно прошли не один
+                кризис и сформировали свою
+                уникальную стратегию трейдинга</p>
+        </div>
+        <div class="block">
+            <h1 class="opacitytext">Капитал</h1>
+            <span></span>
+            <p class="opacitytext">Они научат вас приумножать
+                капитал по аналогии с тем,
+                как делают это сами. Причем
+                обучение будет происходить
+                прямо во время торговли!</p>
         </div>
     </div>
 </div>
@@ -143,7 +204,7 @@
     }
 
     let options = {
-        threshold: [0.5]
+        threshold: [0.1]
     };
     let observer = new IntersectionObserver(onEntry, options);
     let elements = document.querySelectorAll('.anim');
