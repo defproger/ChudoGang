@@ -4,6 +4,7 @@
     height: 910px;
     margin-top: -340px;
     color: white;
+    overflow: hidden;
 }
 
 #exp::before {
