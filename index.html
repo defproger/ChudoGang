@@ -17,7 +17,7 @@
     <link href="./css/infoprogram.css" rel="stylesheet">
     <link href="./css/prices.css" rel="stylesheet">
     <link href="./css/footer.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/popup.css">
     <link href="./css/mobile.css" rel="stylesheet">
 </head>
 <body>
@@ -1039,6 +1039,41 @@
     </div>
 </footer>
 
+<div class="popup_div" id="pp1">
+    <div class="pop_up">
+        <h4>ПОЛУЧИТЕ ПРИГЛАШЕНИЕ НА</h4>
+        <h1>бесплатный вебинар</h1>
+        <p>Предложение ограничено!</p>
+
+        <form>
+            <input class="f_inputs" placeholder="Ваше имя" type="text">
+            <input class="f_inputs" placeholder="Ваш e-mail" type="email">
+            <div class="check_div">
+                <input type="checkbox" name="policy">
+                <label for="policy"><a href="#">Я согласен с Политикой Конфиденциальности</a></label>
+            </div>
+            <input class="s_btn" type="submit" value="Забронировать место">
+        </form>
+    </div>
+</div>
+
+<div class="popup_div" id="pp2">
+    <div class="pop_up pop_up2">
+        <h4>ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ</h4>
+        <h1>30% СКИДКУ</h1>
+        <p>НА VIP КУРС</p>
+
+        <form>
+            <input class="f_inputs" placeholder="Ваше имя" type="text">
+            <input class="f_inputs" placeholder="Ваш e-mail" type="email">
+            <div class="check_div">
+                <input type="checkbox" name="policy">
+                <label for="policy"><a href="#">Я согласен с Политикой Конфиденциальности</a></label>
+            </div>
+            <input class="s_btn" type="submit" value="Забронировать место">
+        </form>
+    </div>
+</div>
 
 <script>
     <!--infoscreen-->
@@ -1126,5 +1161,6 @@
         $(this).toggleClass('active').next().slideToggle(300);
     });
 </script>
+<script src="./js/popup.js"></script>
 </body>
 </html>
