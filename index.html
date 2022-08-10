@@ -29,10 +29,10 @@
 
         <div class="hiddennav">
             <nav>
-                <a href="#bigblock">ОБ АВТОРЕ</a>
-                <a href="#accordion">ПРОГРАММА</a>
-                <a href="#score">ЧТО Я ПОЛУЧУ</a>
-                <a href="#info">FAQ</a>
+                <a href="#about">ОБ АВТОРЕ</a>
+                <a href="#rocket">ПРОГРАММА</a>
+                <a href="#results">ЧТО Я ПОЛУЧУ</a>
+                <a href="#accordion">FAQ</a>
                 <div class="button-container">
                     <a href="#" class="btn">Забронировать место</a>
                 </div>
@@ -87,6 +87,7 @@
 
     navSlide();
 </script>
+
 <!--main screen-->
 <div id="mainscreen">
     <div class="prlx">
@@ -150,7 +151,7 @@
 <!--second screen-->
 <div id="exp">
     <div class="container">
-        <div class="texts anim animleft">
+        <div id="about" class="texts anim animleft">
             <h1 class="titletext">
                 менторы Chudo-Gang <br>
                 имеют опыт <span> свыше <br>
@@ -1016,14 +1017,14 @@
         <div class="f_links">
             <h4>Быстрые ссылки</h4>
             <ul>
-                <li><a href="#">Об авторе</a></li>
-                <li><a href="#">Для кого</a></li>
-                <li><a href="#">Программа</a></li>
+                <li><a href="#about">Об авторе</a></li>
+                <li><a href="#line">Для кого</a></li>
+                <li><a href="#rocket">Программа</a></li>
             </ul>
 
             <ul class="f_s_ul">
-                <li><a href="#">Что я получу</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#results">Что я получу</a></li>
+                <li><a href="#accordion">FAQ</a></li>
             </ul>
         </div>
 
@@ -1038,6 +1039,29 @@
         </div>
     </div>
 </footer>
+<script>
+    const anchorsLinks = () => {
+            const burger = document.querySelector('.burger')
+            const nav = document.querySelector('.hiddennav')
+            const navLinks = document.querySelectorAll('header nav a')
+
+            const anchorsAll = document.querySelectorAll('a[href*="#"]')
+
+
+            for (let anchor of anchorsAll) {
+                anchor.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const blockID = anchor.getAttribute('href')
+                    document.querySelector('' + blockID).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    })
+                })
+            }
+        }
+
+        anchorsLinks();
+</script>
 
 <div class="popup_div" id="pp1">
     <div class="pop_up">
