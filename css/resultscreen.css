@@ -72,6 +72,13 @@
     font-style: normal;
 }
 
+#results .blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 53px;
+}
+
 #results .block {
     position: relative;
     width: 521px;
@@ -86,7 +93,8 @@
     display: flex;
 
 }
-#results  h2 {
+
+#results h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
@@ -97,6 +105,7 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
+    margin-top: 20px;
 }
 
 #results .block img {
@@ -105,4 +114,8 @@
     right: -20px;
     width: 45%;
     height: auto;
+}
+
+#results .texts {
+    width: 270px;
 }
