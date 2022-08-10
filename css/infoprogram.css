@@ -1,8 +1,13 @@
 #infoprogram {
     margin-top: 150px;
-    height: 1150px;
+    width: 100%;
+    overflow: hidden;
 }
 
+.tabsblocks {
+    position: relative;
+    padding: 0 40px;
+}
 .tab h3 {
     font-family: 'Montserrat';
     font-style: normal;
@@ -27,7 +32,6 @@
 }
 
 .tab {
-    float: left;
     width: 409px;
     padding: 10px;
     margin-top: -12px;
@@ -54,7 +58,7 @@
     margin-bottom: 15px;
 }
 
-.tab button:last-child {
+.tab button.last {
     border-bottom: 0;
     margin-bottom: 0;
 }
@@ -76,7 +80,6 @@
     font-family: 'Montserrat';
     font-style: normal;
 
-    float: left;
     padding: 75px 52px;
     width: 657px;
     height: 382px;
@@ -87,6 +90,9 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 17px 22px 39px rgba(0, 0, 0, 0.25), inset 0px 0px 58px rgba(255, 255, 255, 0.1);
     border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    top: 0;
+    right: -765px;
 }
 
 .tabcontent h1 {
@@ -144,7 +150,7 @@
 }
 
 @media (max-width: 600px) {
-    .tab, .tabcontent {
+    .tab {
         width: 100% !important;
         margin: 0 auto;
     }

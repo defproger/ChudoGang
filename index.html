@@ -579,85 +579,91 @@
         <h1 class="titletext">Программа обучения <br>
             <span>из 9 модулей</span>
         </h1>
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'coding', 'arrow1')" id="defaultOpen">
-                <i class="fab fa-coding"></i>
-                <h3>Модуль 1.</h3>
-                <p>Вводный урок, знакомство с
-                    трейдингом и обзор бирж</p>
-                <span id="arrow1" class=" arrow fas fa-caret-right"></span>
-            </button>
+        <div class="tabsblocks">
+            <div class="tab anim animleft">
+                <button class="tablinks" onclick="openTab(event, 'coding', 'arrow1')" id="defaultOpen">
+                    <i class="fab fa-coding"></i>
+                    <h3>Модуль 1.</h3>
+                    <p>Вводный урок, знакомство с
+                        трейдингом и обзор бирж</p>
+                    <span id="arrow1" class=" arrow fas fa-caret-right"></span>
+                </button>
+                <div id="coding" class="tabcontent anim animrightlow">
+                    <img src="./img/infoprogram/1.png" alt="">
+                    <h1>Модуль 1. Вводный урок, знакомство
+                        с трейдингом и обзор бирж</h1>
+                    <ul>
+                        <li>Открытие закрытие сделки /позиции</li>
 
-            <button class="tablinks" onclick="openTab(event, 'wordPress', 'arrow2')">
-                <i class="fab fa-wordpress"></i>
-                <h3>Модуль 1.</h3>
-                <p>Вводный урок, знакомство с
-                    трейдингом и обзор бирж</p> <span id="arrow2" class=" arrow fas fa-caret-right"></span>
-            </button>
+                        <li> Работа с биржей</li>
 
-            <button class="tablinks" onclick="openTab(event, 'videos', 'arrow3')">
-                <i class="fas fa-video"></i>
-                <h3>Модуль 1.</h3>
-                <p>Вводный урок, знакомство с
-                    трейдингом и обзор бирж</p>
-                <span id="arrow3" class=" arrow fas fa-caret-right"></span>
-            </button>
+                        <li> Обзор рынков/фьючерсы,спот,фонды</li>
 
-            <button class="tablinks" onclick="openTab(event, 'photoshop', 'arrow4')">
-                <i class="far fa-image"></i>
-                <h3>Модуль 1.</h3>
-                <p>Вводный урок, знакомство с
-                    трейдингом и обзор бирж</p> <span id="arrow4" class=" arrow fas fa-caret-right"></span>
-            </button>
+                        <li> Кредитные плечи</li>
+                    </ul>
+                </div>
+
+                <button class="tablinks" onclick="openTab(event, 'wordPress', 'arrow2')">
+                    <i class="fab fa-wordpress"></i>
+                    <h3>Модуль 1.</h3>
+                    <p>Вводный урок, знакомство с
+                        трейдингом и обзор бирж</p> <span id="arrow2" class=" arrow fas fa-caret-right"></span>
+                </button>
+                <div id="wordPress" class="tabcontent anim animrightlow">
+                    <h1>Модуль 1. wordPress</h1>
+                    <ul>
+                        <li>Открытие закрытие сделки /позиции</li>
+
+                        <li> Работа с биржей</li>
+
+                        <li> Обзор рынков/фьючерсы,спот,фонды</li>
+
+                        <li> Кредитные плечи</li>
+                    </ul>
+                </div>
+
+                <button class="tablinks" onclick="openTab(event, 'videos', 'arrow3')">
+                    <i class="fas fa-video"></i>
+                    <h3>Модуль 1.</h3>
+                    <p>Вводный урок, знакомство с
+                        трейдингом и обзор бирж</p>
+                    <span id="arrow3" class=" arrow fas fa-caret-right"></span>
+                </button>
+                <div id="videos" class="tabcontent anim animrightlow">
+                    <h3>Videos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non blanditiis voluptates,
+                        consequatur, ratione
+                        debitis quibusdam autem exercitationem provident, veniam impedit quae mollitia nobis a
+                        distinctio cum
+                        laborum corporis. Itaque, minus?</p>
+                </div>
+
+                <button class="tablinks last" onclick="openTab(event, 'photoshop', 'arrow4')">
+                    <i class="far fa-image"></i>
+                    <h3>Модуль 1.</h3>
+                    <p>Вводный урок, знакомство с
+                        трейдингом и обзор бирж</p> <span id="arrow4" class=" arrow fas fa-caret-right"></span>
+                </button>
+                <div id="photoshop" class="tabcontent anim animrightlow">
+                    <h3>Photoshop</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non blanditiis voluptates,
+                        consequatur, ratione
+                        debitis quibusdam autem exercitationem provident, veniam impedit quae mollitia nobis a
+                        distinctio cum
+                        laborum corporis. Itaque, minus?</p>
+                </div>
+            </div>
+
         </div>
 
-        <div id="coding" class="tabcontent">
-            <img src="./img/infoprogram/1.png" alt="">
-            <h1>Модуль 1. Вводный урок, знакомство
-                с трейдингом и обзор бирж</h1>
-            <ul>
-                <li>Открытие закрытие сделки /позиции</li>
 
-                <li> Работа с биржей</li>
-
-                <li> Обзор рынков/фьючерсы,спот,фонды</li>
-
-                <li> Кредитные плечи</li>
-            </ul>
-        </div>
-
-        <div id="wordPress" class="tabcontent">
-            <h1>Модуль 1. wordPress</h1>
-            <ul>
-                <li>Открытие закрытие сделки /позиции</li>
-
-                <li> Работа с биржей</li>
-
-                <li> Обзор рынков/фьючерсы,спот,фонды</li>
-
-                <li> Кредитные плечи</li>
-            </ul>
-        </div>
-
-        <div id="videos" class="tabcontent">
-            <h3>Videos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non blanditiis voluptates, consequatur, ratione
-                debitis quibusdam autem exercitationem provident, veniam impedit quae mollitia nobis a distinctio cum
-                laborum corporis. Itaque, minus?</p>
-        </div>
-        <div id="photoshop" class="tabcontent">
-            <h3>Photoshop</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non blanditiis voluptates, consequatur, ratione
-                debitis quibusdam autem exercitationem provident, veniam impedit quae mollitia nobis a distinctio cum
-                laborum corporis. Itaque, minus?</p>
-        </div>
     </div>
 </div>
 <!--prices-->
 <div id="prices" class="container">
     <h1 class="titletext">ВЫБИРАЙТЕ ФОРМАТ ОБУЧЕНИЯ</h1>
     <div class="cards">
-        <div class="card">
+        <div class="card anim">
             <div class="cardheader">
                 <h3>Minimal</h3>
                 <svg width="91" height="39" viewBox="0 0 91 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -755,7 +761,7 @@
                 <a href="" class="secondbtn">ОФОРМИТЬ РАССРОЧКУ</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card anim anim1">
             <div class="cardheader">
                 <h3>Minimal</h3>
                 <svg width="91" height="39" viewBox="0 0 91 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -853,7 +859,7 @@
                 <a href="" class="secondbtn">ОФОРМИТЬ РАССРОЧКУ</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card anim anim2">
             <div class="cardheader">
                 <h3>Minimal</h3>
                 <svg width="91" height="39" viewBox="0 0 91 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -954,54 +960,57 @@
     </div>
 </div>
 <!--accordion-->
-<div class="container accordion_c">
-    <h1>ответы на частые вопросы</h1>
-    <div class="block one">
-        <div class="acc_arrea_answer">
+<div id="accordion">
+    <div class="container accordion_c">
+        <h1>ответы на частые вопросы</h1>
+        <div class="block one">
+            <div class="acc_arrea_answer anim animleft">
 
-            <div class="answer_title">Можно ли задавать <br> вопросы лично ментору <br> по ходу курса?</div>
+                <div class="answer_title">Можно ли задавать <br> вопросы лично ментору <br> по ходу курса?</div>
 
-            <div class="acc_answer_arrea">Да, конечно! Можно написав в лс дискорда или отметив ментора в записи</div>
+                <div class="acc_answer_arrea">Да, конечно! Можно написав в лс дискорда или отметив ментора в записи
+                </div>
 
-        </div>
-
-        <div class="acc_arrea_answer">
-
-            <div class="answer_title">Будут ли доступны записи всех занятий?</div>
-
-            <div class="acc_answer_arrea">Да, записи стримов будут доступны</div>
-
-        </div>
-
-        <div class="acc_arrea_answer">
-
-            <div class="answer_title">Есть ли возможность общения с ментором <br> и поддержка после <br> окончания
-                курса?
             </div>
 
-            <div class="acc_answer_arrea">Да, все волнующие вопросы можно задать в личку дискорда</div>
+            <div class="acc_arrea_answer anim animrightlow">
 
-        </div>
+                <div class="answer_title">Будут ли доступны записи всех занятий?</div>
 
-        <div class="acc_arrea_answer">
+                <div class="acc_answer_arrea">Да, записи стримов будут доступны</div>
 
-            <div class="answer_title">Даете ли вы 100% <br> гарантию того, что я буду хорошо зарабатывать?</div>
+            </div>
 
-            <div class="acc_answer_arrea">Такой гарантии не даст ни один трейдер, так как все зависит от
-                индивидуальной усвояемости информации но, после прохождения курса и наработки стратегии ваш
-                заработок зависит только от вас и от понимания полученной информации
+            <div class="acc_arrea_answer anim animrightlow">
+
+                <div class="answer_title">Есть ли возможность общения с ментором <br> и поддержка после <br> окончания
+                    курса?
+                </div>
+
+                <div class="acc_answer_arrea">Да, все волнующие вопросы можно задать в личку дискорда</div>
+
+            </div>
+
+            <div class="acc_arrea_answer anim animrightlow">
+
+                <div class="answer_title">Даете ли вы 100% <br> гарантию того, что я буду хорошо зарабатывать?</div>
+
+                <div class="acc_answer_arrea">Такой гарантии не даст ни один трейдер, так как все зависит от
+                    индивидуальной усвояемости информации но, после прохождения курса и наработки стратегии ваш
+                    заработок зависит только от вас и от понимания полученной информации
+                </div>
+
             </div>
 
         </div>
-
     </div>
 </div>
+
 <!--footer-->
 <footer>
     <div class="container f_cont">
         <div class="f_logo">
             <img src="./img/logo.png" alt="chudo logo">
-            <img class="s-m-logo" src="./img/Group 365.png" alt="">
         </div>
 
         <div class="f_links">
@@ -1079,6 +1088,7 @@
     }
 </script>
 <script charset="utf-8" src="./js/jquery.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/jquery.parallax.js"></script>
 <script>
     $('#scene').parallax();
@@ -1107,8 +1117,7 @@
 
     });
 
-</script>
-<script>
+
     $('.answer_title').click(function (event) {
         if ($('.block').hasClass('one')) {
             $('.answer_title').not($(this)).removeClass('active');
