@@ -46,6 +46,7 @@
     line-height: 33px;
     color: white;
 }
+
 .btnshadow:hover {
     background: #FFB800;
     box-shadow: 0px 0px 27px -5px #DDB44C;
@@ -62,4 +63,46 @@
     background: none;
     box-shadow: 0px 0px 14px -5px #DDB44C,
     0 0 4px -1px gold inset;
+}
+
+#results {
+    overflow: hidden;
+    margin-top: 140px;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+#results .block {
+    position: relative;
+    width: 521px;
+    height: 140px;
+
+    padding: 31px 0 47px 51px;
+
+    background: rgba(0, 0, 0, 0.01);
+    box-shadow: 18px 16px 38px rgba(0, 0, 0, 0.25), 0 1px 2px -1px gold inset;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    display: flex;
+
+}
+#results  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+#results p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#results .block img {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 45%;
+    height: auto;
 }
