@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
 
     /*cancel.css*/
@@ -38,7 +38,7 @@
     }
 
     header nav {
-        background-color: #23242B;
+        background-color: #18181c;
         backdrop-filter: blur(1500px);
         display: flex;
         flex-direction: column;
@@ -71,5 +71,112 @@
 
     .burger {
         display: block;
+    }
+
+    .titletext {
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .bodytext {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #line{
+        height: 1250px;
+        padding: 24px;
+        width: 300px;
+    }
+
+    #line .blocks{
+        flex-direction: column;
+    }
+
+    #line .block{
+        margin: 0;
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
+
+    #exp{
+        margin-top: 0px;
+        height: auto;
+    }
+
+    #exp .container{
+        flex-direction: column;
+    }
+
+    #lineblocks{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #exp img {
+        max-width: 100%;
+        height: auto;
+        margin-top: -115px;
+    }
+
+    #lineblocks .container{
+        flex-direction: column;
+    }
+
+    #exp .bodytext{
+        font-size: 14px;
+    }
+
+    #rocket{
+        margin-top: 79px;
+    }
+
+    #rocket .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #rocket .blocks{
+        height: auto;
+    }
+
+    #bookscreen .block{
+        flex-direction: column;
+    }
+
+    #bookscreen h1{
+        font-size: 25px;
+        line-height: 37px;
+        text-align: center;
+    }
+
+    .btnshadow{
+        margin-top: 69px;
+    }
+
+    #rocket .block{
+        padding: 0;
+    }
+
+    #rocket .block p{
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .secondtitle{
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    #results .blocks{
+        margin-top: 80px;
+        grid-template-columns: 1fr;
+        grid-gap: 70px;
+    }
+
+    #results .block{
+        width: 100%;
     }
 }

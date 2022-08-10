@@ -1,0 +1,139 @@
+#prices {
+    margin-top: 150px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card {
+    background: rgba(28, 28, 28, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 16px;
+    max-width: 390px;
+}
+
+.cardheader {
+    background: rgba(38, 38, 38, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0px 0px 23px rgba(255, 255, 255, 0.1);
+    border-radius: 16px 16px 0px 0px;
+
+    display: flex;
+    padding: 33px;
+    justify-content: space-between;
+}
+
+.cardheader h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.cardbody {
+    padding: 45px 56px;
+}
+
+.cardbody ul {
+    padding-bottom: 45px;
+    margin-bottom: 30px;
+
+    list-style: none;
+
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(90deg, #5E5E5E 0%, rgba(207, 207, 207, 0.296279) 70.92%, rgba(255, 255, 255, 0) 100.78%);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    /* or 100% */
+
+
+    color: #FFFFFF;
+}
+
+.cardbody li {
+    margin-bottom: 5px;
+}
+
+.crossed {
+    text-decoration-line: line-through;
+}
+
+.lastprice {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 17px;
+    /* identical to box height, or 85% */
+
+    text-decoration-line: line-through;
+
+    background: linear-gradient(89.79deg, #D1D1D1 0.11%, #5C5C5C 103.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+}
+
+.price {
+    margin: 35px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 17px;
+    /* identical to box height, or 35% */
+    text-align: center;
+
+    color: #FFC933;
+}
+
+.card .btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #454545;
+
+    text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.5);
+    padding: 38px 92px;
+}
+
+.secondbtn {
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    background: linear-gradient(91.47deg, #A2A2A2 18.13%, #545454 82.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    margin-top: 25px;
+    display: block;
+}

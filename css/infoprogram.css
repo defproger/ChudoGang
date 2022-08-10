@@ -1,0 +1,161 @@
+#infoprogram {
+    margin-top: 150px;
+    height: 1150px;
+}
+
+.tab h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #606060;
+}
+
+.tab p {
+    max-width: 260px;
+    margin-top: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    /* or 124% */
+
+
+    color: #FFFFFF;
+}
+
+.tab {
+    float: left;
+    width: 409px;
+    padding: 10px;
+    margin-top: -12px;
+
+    background: #0E0E0E;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 17px 22px 39px rgba(0, 0, 0, 0.25), inset 0px 0px 22px rgba(255, 255, 255, 0.1);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.tab button {
+    display: block;
+    width: 100%;
+    padding: 13px 43px 21px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    background: none;
+
+
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+
+    margin-bottom: 15px;
+}
+
+.tab button:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background: rgba(217, 217, 217, 0.1);
+}
+
+.tab button.active {
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: inset 0px 0px 21px rgba(255, 255, 255, 0.1);
+    border-radius: 17px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    font-family: 'Montserrat';
+    font-style: normal;
+
+    float: left;
+    padding: 75px 52px;
+    width: 657px;
+    height: 382px;
+    margin-left: 40px;
+    animation: blinker 0.8s ease;
+
+    background: #101010;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 17px 22px 39px rgba(0, 0, 0, 0.25), inset 0px 0px 58px rgba(255, 255, 255, 0.1);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.tabcontent h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+    /* or 153% */
+    margin-bottom: 34px;
+}
+
+.tabcontent img {
+    margin: auto;
+    margin-top: -197px;
+    max-width: 550px;
+    display: block;
+}
+
+.tabcontent ul {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    margin-left: 10px;
+}
+
+.tabcontent li {
+    margin-bottom: 5px;
+}
+
+/* animation effects */
+@keyframes blinker {
+    10% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*.tab .arrow {*/
+/*    color: rgb(88, 88, 88);*/
+/*    float: right;*/
+/*    font-size: 26px;*/
+/*    position: relative;*/
+/*    left: 25px;*/
+/*}*/
+
+@media (max-width: 800px) {
+    .tab {
+        width: 30% !important;
+    }
+
+    .tabcontent {
+        width: 61%;
+    }
+}
+
+@media (max-width: 600px) {
+    .tab, .tabcontent {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+
+    .tab button {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 18px 10px;
+    }
+
+    .tab .arrow {
+        display: none !important;
+    }
+}
