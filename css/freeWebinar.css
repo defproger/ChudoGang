@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: local('../fonts/Bebas Neue Regular'), local('../fonts/BebasNeueRegular'),
+        url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueRegular.woff') format('woff'),
+        url('../fonts/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    src: local('Montserrat'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.ttf');
+    src: local('Montserrat'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
+    src: local('Montserrat'),
+    url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(0 0 0 / 78%), rgb(0 0 0 / 80%)), url(../img/lastscreenb.png);
+}
+
+.container {
+    display: flex;
+}
+
+.firstscreen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 85px;
+}
+
+.firstscreen img {
+    width: 125px;
+}
+
+.firstscreen h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 68px;
+}
+
+.firstscreen h1 span {
+    color: rgba(255, 184, 0, 1);
+}
+
+.firstscreen h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    color: #FFF5F5;
+    margin-top: 35px;
+}
+
+.firstscreen h5 span {
+    font-weight: 600;
+}
+
+.buttons_div {
+    width: 689px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 31px;
+    margin: auto;
+    margin-top: 55px;
+}
+
+.buttons_div button {
+    height: 101px;
+}
+
+.buy_btn {
+    background: linear-gradient(90deg, #FED261 0%, #FFA928 100%, #FF9900 100%);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #454545;
+    text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.installment_btn {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    background: linear-gradient(91.47deg, #A2A2A2 18.13%, #545454 82.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;
+}
