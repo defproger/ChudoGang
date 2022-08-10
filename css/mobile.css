@@ -1,14 +1,18 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
 
 
     /*cancel.css*/
     .container {
-        width: 316px;
+        /* width: 316px; */
+        width: 685px;
     }
 
+
     .btn {
-        font-size: 12px;
-        padding: 13px 25px;
+        /* font-size: 12px;
+        padding: 13px 25px; */
+        font-size: 19px;
+        padding: 25px 50px;
     }
 
     /*header*/
@@ -75,8 +79,24 @@
 
     .titletext {
         font-weight: 600;
-        font-size: 55px;
-        line-height: 55px;
+        /* font-size: 55px;
+        line-height: 55px; */
+        font-size: 66px;
+        line-height: 73px;
+    }
+
+    #infoprogram .titletext{
+        text-align: center;
+    }
+
+    .anim.show{
+        margin: auto;
+        margin-top: 62px;
+    }
+
+    #rocket .block{
+        margin: auto;
+        margin-bottom: 132px;
     }
 
     .bodytext {
@@ -88,7 +108,7 @@
     #line {
         height: 1250px;
         padding: 24px;
-        width: calc(100% - 48px - 30px);
+        width: calc(90% - 48px - 30px);
     }
 
     #line .blocks {
@@ -202,8 +222,10 @@
 
     .answer_title:before,
     .answer_title::after {
-        top: 111%;
-        margin-right: 40%;
+        /* top: 111%;
+        margin-right: 40%; */
+        top: 122%;
+        margin-right: 47%;
     }
 
     .acc_answer_arrea {
@@ -218,23 +240,23 @@
         height: 295px;
     }
 
-    .f_logo img{
+    .f_logo img {
         width: 64px;
     }
 
-    .s-m-logo{
+    .s-m-logo {
         display: none;
     }
 
-    .f_links{
+    .f_links {
         display: none;
     }
 
-    .f_cont{
+    .f_cont {
         flex-direction: column;
     }
 
-    .m_imgs{
+    .m_imgs {
         justify-content: space-around;
     }
 
@@ -242,32 +264,32 @@
         padding-top: 0px;
     }
 
-    .f_cont h4{
+    .f_cont h4 {
         text-align: start;
         font-size: 15px;
     }
 
-    .cards{
+    .cards {
         flex-direction: column;
     }
 
-    .card .btn{
+    .card .btn {
         padding: 24px 61px;
     }
 
-    .card{
+    .card {
         margin-bottom: 55px;
     }
 
-    #teachscreen{
+    #teachscreen {
         height: auto;
     }
 
-    #teachscreen .container{
+    #teachscreen .container {
         flex-direction: column;
     }
 
-    #teachscreen .bodytext{
+    #teachscreen .bodytext {
         font-size: 14px;
     }
 
@@ -298,5 +320,35 @@
     .tabcontent img {
         margin-top: 0;
         max-width: 100%;
+    }
+
+    .prlxoff ul {
+        display: none;
+    }
+
+    #lineblocks .block {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 624px){
+    .container {
+        width: 316px;
+    }
+
+
+    .btn {
+        font-size: 12px;
+        padding: 13px 25px;
+    }
+
+    .titletext {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .answer_title:before, .answer_title::after {
+        top: 113%;
+        margin-right: 42%;
     }
 }
