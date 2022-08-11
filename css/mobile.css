@@ -375,6 +375,13 @@
     .results_cont{
         width: 85%;
     }
+
+    .lang_select {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 55px;
+    }
 }
 
 @media screen and (max-width: 624px){

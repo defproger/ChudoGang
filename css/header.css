@@ -28,6 +28,7 @@ header nav a {
     color: white;
     transition: .3s;
 }
+
 header nav a:hover {
     color: #FF7A2F;
 
@@ -67,6 +68,78 @@ header nav a:hover {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.msg-radio {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.msg-radio li label {
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.msg-radio li {
+    display: inline;
+}
+
+.msg-intext {
+    width: 262px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    border: 1px solid #aaa;
+    background: #eee;
+    font-size: 16px;
+}
+
+.msg-ok {
+    border-radius: 5px;
+    background: #777;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.msg-ok:hover {
+    background: #555;
+}
+
+li.active {
+    color: #FFBC00;
+}
+
+.rr {
+    display: none
+}
+
+.lang_select {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
 }
 
 @keyframes navLinkFade {

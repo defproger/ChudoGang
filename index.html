@@ -27,6 +27,14 @@
 
         <div class="header__logo"><img alt="" src="./img/logo.png"></div>
 
+        <div class="lang_select">
+            <ul class="msg-radio">
+                <li><label><input class="rr" type="radio" name="pos1">RU</label></li>
+                <li><label><input input class="rr" type="radio" name="pos1">УКР</label></li>
+                <li><label><input input class="rr" type="radio" name="pos1">ENG</label></li>
+            </ul>
+        </div>
+
         <div class="hiddennav">
             <nav>
                 <a href="#about">ОБ АВТОРЕ</a>
@@ -1327,6 +1335,13 @@
         }
         $(this).toggleClass('active').next().slideToggle(300);
     });
+
+    var oldRadio;
+        $(document).on("change", 'input[name=pos1]', function (event) {
+            if (oldRadio) oldRadio.closest('li').removeClass('active');
+            oldRadio = $(this);
+            oldRadio.closest('li').addClass('active');
+        });
 </script>
 <script src="./js/popup.js"></script>
 </body>
