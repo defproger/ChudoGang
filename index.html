@@ -46,47 +46,6 @@
         </div>
     </header>
 </div>
-<script>
-    const navSlide = () => {
-        const burger = document.querySelector('.burger')
-        const nav = document.querySelector('.hiddennav')
-        const navLinks = document.querySelectorAll('header nav a')
-        let checker = true;
-
-        burger.addEventListener('click', () => {
-            // Toggle nav
-            checker = !checker;
-
-            setTimeout(() => {
-                nav.classList.toggle('active')
-            }, (checker ? (navLinks.length * 200) : 0))
-
-            // Animate Links
-            navLinks.forEach((link, index) => {
-                if (checker) {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-                    setTimeout(() => {
-                        link.style.opacity = '0'
-                    }, (0.5 + (index / 7 + 0.5)) * 1000)
-                } else {
-                    link.style.animation = `navLinkShow 0.5s ease forwards ${index / 7 + 0.5}s`
-                    setTimeout(() => {
-                        link.style.opacity = '1'
-                    }, (0.5 + (index / 7 + 0.5)) * 1000)
-
-                }
-            })
-            //Burger Animation
-            burger.classList.toggle('toggle')
-            // Off Scroll
-            document.body.classList.toggle('_lock')
-        });
-
-
-    }
-
-    navSlide();
-</script>
 
 <!--main screen-->
 <div id="mainscreen">
@@ -668,7 +627,7 @@
 <div id="prices" class="container">
     <h1 class="titletext">ВЫБИРАЙТЕ ФОРМАТ ОБУЧЕНИЯ</h1>
     <div class="cards">
-        <div class="card anim" style="height: 797px;">
+        <div class="card anim">
             <div class="cardheader">
                 <h3>Minimal</h3>
                 <svg width="91" height="39" viewBox="0 0 91 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -871,7 +830,7 @@
                 <a href="" class="secondbtn">ОФОРМИТЬ РАССРОЧКУ</a>
             </div>
         </div>
-        <div class="card anim anim2" style="height: 797px;">
+        <div class="card anim anim2">
             <div class="cardheader">
                 <h3>VIP</h3>
                 <svg width="92" height="39" viewBox="0 0 92 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1047,9 +1006,62 @@
                 <a href="#"><img src="./img/LinkedIn.png" alt=""></a>
             </div>
         </div>
+
+        <div class="burger burger2">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </div>
 </footer>
 <script>
+    const navSlide = () => {
+        const burgers = document.querySelectorAll('.burger')
+        const nav = document.querySelector('.hiddennav')
+        const navLinks = document.querySelectorAll('header nav a')
+        let checker = true;
+
+        burgers.forEach(burger => {
+            burger.addEventListener('click', () => {
+            // Toggle nav
+            checker = !checker;
+
+            setTimeout(() => {
+                nav.classList.toggle('active')
+            }, (checker ? (navLinks.length * 200) : 0))
+
+            // Animate Links
+            navLinks.forEach((link, index) => {
+                if (checker) {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    setTimeout(() => {
+                        link.style.opacity = '0'
+                    }, (0.5 + (index / 7 + 0.5)) * 1000)
+                } else {
+                    link.style.animation = `navLinkShow 0.5s ease forwards ${index / 7 + 0.5}s`
+                    setTimeout(() => {
+                        link.style.opacity = '1'
+                    }, (0.5 + (index / 7 + 0.5)) * 1000)
+
+                }
+            })
+            //Burger Animation
+            burgers.forEach(burger => {
+                burger.classList.toggle('toggle')
+            });
+            // Off Scroll
+            document.body.classList.toggle('_lock')
+
+            document.documentElement.scrollTop = 0;
+
+        });
+        });
+
+
+    }
+
+    navSlide();
+
     const anchorsLinks = () => {
         const burger = document.querySelector('.burger')
         const nav = document.querySelector('.hiddennav')

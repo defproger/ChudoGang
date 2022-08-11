@@ -185,3 +185,12 @@ footer {
 .m_imgs img{
     width: 52px;
 }
+
+.f_cont{
+    position: relative;
+}
+
+.burger2{
+    right: 15px;
+    top: 57px;
+}
