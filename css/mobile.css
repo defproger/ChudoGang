@@ -4,7 +4,7 @@
     /*cancel.css*/
     .container {
         /* width: 316px; */
-        width: 685px;
+        width: 91%;
     }
 
 
@@ -106,7 +106,7 @@
     }
 
     #line {
-        height: 1250px;
+        height: auto;
         padding: 10px;
         width: calc(95% - 50px);
     }
@@ -141,7 +141,7 @@
     #exp img {
         max-width: 100%;
         height: auto;
-        margin-top: -115px;
+        margin-top: -260px;
     }
 
     #lineblocks .container {
@@ -166,6 +166,8 @@
 
     #bookscreen .block {
         flex-direction: column;
+        margin-top: -100px;
+        padding: 52px 55px;
     }
 
     #bookscreen h1 {
@@ -175,7 +177,7 @@
     }
 
     .btnshadow {
-        margin-top: 69px;
+        margin-top: 50px;
     }
 
     #rocket .block {
@@ -335,6 +337,10 @@
     #bookscreen {
          padding: 0;
     }
+
+    .results_cont{
+        width: 85%;
+    }
 }
 
 @media screen and (max-width: 624px){
@@ -356,5 +362,9 @@
     .answer_title:before, .answer_title::after {
         top: 113%;
         margin-right: 42%;
+    }
+
+    .results_cont{
+        width: 85%;
     }
 }

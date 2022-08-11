@@ -43,3 +43,28 @@
     font-weight: 300;
     max-width: 410px;
 }
+
+
+.img {
+    position: relative;
+}
+
+.img button {
+    width: 309px;
+    height: 96px;
+    position: absolute;
+    left: 10px;
+    bottom: 25px;
+    background: linear-gradient(90deg, #FED261 0%, #FFA928 100%, #FF9900 100%);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #454545;
+    text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}

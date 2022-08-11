@@ -165,7 +165,7 @@ body {
 
     color: #FFFFFF;
 
-    background: #F8B88A;
+    background: #ffab34;
     border-radius: 10px;
     opacity: 0.95;
     transition: .3s;
@@ -175,7 +175,6 @@ body {
     position: absolute;
     content: "";
     display: inline-block;
-    background: linear-gradient(87.87deg, #E6A705 25.33%, #F8B88A 74.36%);
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -195,6 +194,10 @@ body {
     -4px -4px 6px 0 rgba(116, 125, 136, .2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+#prices .titletext{
+    text-align: center;
 }
 
 @keyframes shiny-btn {

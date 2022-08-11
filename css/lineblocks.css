@@ -53,7 +53,7 @@
 }
 
 #lineblocks .block p {
-
+    width: 297px;
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
