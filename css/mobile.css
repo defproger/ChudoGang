@@ -367,4 +367,9 @@
     .results_cont{
         width: 85%;
     }
+
+    .img button{
+        width: 46%;
+        left: 315px;
+    }
 }
