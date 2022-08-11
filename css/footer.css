@@ -16,12 +16,12 @@
     line-height: 82px;
     text-align: center;
     color: #FFFFFF;
-
+    margin-bottom: 60px;
 }
 
 .block {
     padding: 0 20px;
-    margin-top: 72px;
+    margin-top: -10px;
 }
 
 .answer_title br {
