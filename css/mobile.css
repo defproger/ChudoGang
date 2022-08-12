@@ -382,6 +382,10 @@
         margin-left: 0;
         margin-right: 55px;
     }
+
+    #lineblocks .block span{
+        margin-top: 22px;
+    }
 }
 
 @media screen and (max-width: 624px){
