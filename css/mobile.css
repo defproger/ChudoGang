@@ -430,4 +430,8 @@
     #exp img {
         margin-top: -132px;
     }
+
+    .msg-radio li label{
+        font-size: 13px;
+    }
 }

@@ -91,8 +91,10 @@ header nav a:hover {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    margin-left: 7px;
-    margin-right: 7px;
+    /* margin-left: 7px;
+    margin-right: 7px; */
+    margin-left: 30px;
+    margin-right: 10px;
 }
 
 .msg-radio li {
@@ -140,6 +142,62 @@ li.active {
     display: flex;
     align-items: center;
     margin-left: 50px;
+}
+
+.lng-li:before, .lng-li:after {
+    position: absolute;
+    content: '';
+    top: 45%;
+    width: 0;
+    height: 1px;
+    background: #aeb3c2;
+}
+
+.s_li::before{
+    display: none;
+}
+
+.l_li::after{
+    display: none;
+}
+
+.s_li::after{
+    width: 20px;
+}
+
+.l_li::before{
+    width: 10px;
+}
+
+.l_li::before {
+    width: 12px;
+    left: 9px;
+}
+
+li.active::before{
+    background: #FFBC00;
+}
+
+li.active::after{
+    background: #FFBC00;
+}
+
+.msg-radio li{
+    position: relative;
+}
+
+.m_li::after {
+    width: 12px;
+    left: 70px;
+}
+
+.m_li::before {
+    left: 10px;
+    width: 12px;
+}
+
+.s_li::after {
+    width: 10px;
 }
 
 @keyframes navLinkFade {

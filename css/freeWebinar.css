@@ -150,3 +150,136 @@ input::-webkit-inner-spin-button {
     background-clip: text;
     cursor: pointer;
 }
+@media screen and (max-width: 1200px){
+    .firstscreen{
+        height: auto;
+    }
+
+    .cards_div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f_links{
+        display: none;
+    }
+
+    .f_cont{
+        width: 807px;
+    }
+
+    .cards_div{
+        width: 100%;
+    }
+
+    .card{
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .wrapper{
+        height: 110vh;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .f_cont{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .buttons_div{
+        width: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 31px;
+    }
+
+    .firstscreen h1{
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .firstscreen h5{
+        font-size: 26px;
+        line-height: 36px;
+        width: 80%;
+    }
+
+    .buttons_div button {
+        height: 101px;
+        width: 255px;
+    }
+
+    .card{
+        backdrop-filter: none;
+    }
+
+    .f_logo img{
+        width: 64px;
+    }
+
+    .s-m-logo{
+        display: none;
+    }
+
+    .f_links{
+        display: none;
+    }
+
+    .f_cont{
+        flex-direction: column;
+    }
+
+    .m_imgs{
+        justify-content: space-around;
+    }
+
+    .f_cont h4{
+        text-align: start;
+        font-size: 15px;
+    }
+
+    .f_media{
+        width: 235px;
+    }
+
+    .f_cont{
+        padding-left: 0px;
+        padding-bottom: 45px;
+        padding-top: 15px;
+    }
+
+    .f_logo{
+        margin-left: 30px;
+    }
+
+    .f_media{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .card{
+        width: 90%;
+    }
+
+    .line{
+        width: 80%;
+    }
+
+    .card_b_b, .card_r_b{
+        width: 90%;
+    }
+
+    .firstscreen h5 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .f_cont{
+        padding-left: 0;
+    }
+}
