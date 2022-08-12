@@ -60,3 +60,11 @@ if (params.soucre === "from_free_veb") {
 }
 
 
+// Закрыть попап
+let closeButtons = document.querySelectorAll('.pop_up_close');
+closeButtons.forEach(element => {
+    element.addEventListener('click', () => {
+        closepopup(p[0]);
+        closepopup(p[1])
+    })
+});
