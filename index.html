@@ -42,7 +42,8 @@
                 <a href="#results">ЧТО Я ПОЛУЧУ</a>
                 <a href="#accordion">FAQ</a>
                 <div class="button-container">
-                    <a href="#" class="btn">Забронировать место</a>
+                    <a href="#prices" class="btn">Забронировать место</a>
+                    <button class="btn freewbtn">Получить бесплатный вебинар</button>
                 </div>
             </nav>
         </div>
@@ -71,7 +72,6 @@
         </div>
     </div>
     <div class="texts container">
-        <h3>Дата начала: <span>20 ИЮНЯ, 2022</span></h3>
         <h1 class="titletext">Научись зарабатывать <br>
             <span>от 2000$ за 30 дней</span> <br>
             с любой точки мира! <br>
@@ -79,7 +79,7 @@
         <h2 class="bodytext">Обучение у ментеров, которые управляют <br>
             активами институциональных инвесторов</h2>
         <div class="button-container">
-            <a href="#" class="btn">Забронировать место</a>
+            <button class="btn freewbtn">Получить бесплатный вебинар</button>
         </div>
     </div>
 </div>
@@ -444,8 +444,8 @@
     <div class="block">
         <h1>Успей забронировать <br>
             место на курсе!</h1>
-        <a href="" class="btnshadow">Забронировать</a>
-        <a href="" class="btnshadow btnshadowline">Забронировать</a>
+        <a href="#prices" class="btnshadow">Забронировать</a>
+        <button class="btnshadow btnshadowline freewbtn">Получить бесплатный вебинар</button>
     </div>
 </div>
 <!--result screen-->
@@ -540,7 +540,7 @@
 
         <div class="img">
             <img alt="" class="anim animright show" src="./img/tabletgraph.png">
-            <button>Забронировать место</button>
+            <a href="#prices"><button>Забронировать место</button></a>
         </div>
 
     </div>
@@ -843,8 +843,8 @@
                 </ul>
                 <div class="lastprice">Обычная цена 550$</div>
                 <div class="price">200$</div>
-                <a href="" class="btn">Купить</a>
-                <a href="" class="secondbtn">ОФОРМИТЬ РАССРОЧКУ</a>
+                <button class="btn minimalBtn">Купить</button>
+                <button class="secondbtn minimalBtn">ОФОРМИТЬ РАССРОЧКУ</button>
             </div>
         </div>
 
@@ -948,8 +948,8 @@
                 </ul>
                 <div class="lastprice">Обычная цена 1500$</div>
                 <div class="price">990$</div>
-                <a href="" class="btn">Купить</a>
-                <a href="" class="secondbtn">ОФОРМИТЬ РАССРОЧКУ</a>
+                <button class="btn vipBtn">Купить</button>
+                <button class="secondbtn vipBtn">ОФОРМИТЬ РАССРОЧКУ</button>
             </div>
         </div>
 
@@ -1048,8 +1048,8 @@
                 </ul>
                 <div class="lastprice">Обычная цена 850$</div>
                 <div class="price">490$</div>
-                <a href="" class="btn">Купить</a>
-                <a href="" class="secondbtn">ОФОРМИТЬ РАССРОЧКУ</a>
+                <button class="btn standartBtn">Купить</button>
+                <button class="secondbtn standartBtn">ОФОРМИТЬ РАССРОЧКУ</button>
             </div>
         </div>
     </div>
@@ -1235,6 +1235,63 @@
         <h4>ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ</h4>
         <h1>30% СКИДКУ</h1>
         <p>НА VIP КУРС</p>
+
+        <form>
+            <input class="f_inputs" placeholder="Ваше имя" type="text">
+            <input class="f_inputs" placeholder="Ваш e-mail" type="email">
+            <div class="check_div">
+                <input type="checkbox" name="policy">
+                <label for="policy"><a href="#">Я согласен с Политикой Конфиденциальности</a></label>
+            </div>
+            <input class="s_btn" type="submit" value="Забронировать место">
+        </form>
+
+        <div id="pop_up_close" class="pop_up_close">✖</div>
+    </div>
+</div>
+
+<div class="popup_div" >
+    <div class="pop_up pop_up2"> 
+        <h2>Бронирование места</h2>
+        <h1>Minimal</h1>
+
+        <form>
+            <input class="f_inputs" placeholder="Ваше имя" type="text">
+            <input class="f_inputs" placeholder="Ваш e-mail" type="email">
+            <div class="check_div">
+                <input type="checkbox" name="policy">
+                <label for="policy"><a href="#">Я согласен с Политикой Конфиденциальности</a></label>
+            </div>
+            <input class="s_btn" type="submit" value="Забронировать место">
+        </form>
+
+        <div id="pop_up_close" class="pop_up_close">✖</div>
+    </div>
+</div>
+
+<div class="popup_div" >
+    <div class="pop_up pop_up2"> 
+        <h2>Бронирование места</h2>
+        <h1>VIP</h1>
+
+        <form>
+            <input class="f_inputs" placeholder="Ваше имя" type="text">
+            <input class="f_inputs" placeholder="Ваш e-mail" type="email">
+            <div class="check_div">
+                <input type="checkbox" name="policy">
+                <label for="policy"><a href="#">Я согласен с Политикой Конфиденциальности</a></label>
+            </div>
+            <input class="s_btn" type="submit" value="Забронировать место">
+        </form>
+
+        <div id="pop_up_close" class="pop_up_close">✖</div>
+    </div>
+</div>
+
+<div class="popup_div" >
+    <div class="pop_up pop_up2"> 
+        <h2>Бронирование места</h2>
+        <h1>Standart</h1>
 
         <form>
             <input class="f_inputs" placeholder="Ваше имя" type="text">

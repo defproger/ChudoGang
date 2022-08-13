@@ -64,7 +64,40 @@ if (params.soucre === "from_free_veb") {
 let closeButtons = document.querySelectorAll('.pop_up_close');
 closeButtons.forEach(element => {
     element.addEventListener('click', () => {
-        closepopup(p[0]);
-        closepopup(p[1])
+        for (let i = 0; i < p.length; i++) {
+            closepopup(p[i]);
+        }
+    })
+});
+
+
+
+let freeWebinarButtons = document.querySelectorAll('.freewbtn');
+freeWebinarButtons.forEach(element => {
+    element.addEventListener('click', () => {
+        open(p[0])
+    })
+});
+
+
+let minimalButtons = document.querySelectorAll('.minimalBtn');
+let vipButtons = document.querySelectorAll('.vipBtn');
+let standartButtons = document.querySelectorAll('.standartBtn');
+
+minimalButtons.forEach(element => {
+    element.addEventListener('click', () => {
+        open(p[2])
+    })
+});
+
+vipButtons.forEach(element => {
+    element.addEventListener('click', () => {
+        open(p[3])
+    })
+});
+
+standartButtons.forEach(element => {
+    element.addEventListener('click', () => {
+        open(p[4])
     })
 });

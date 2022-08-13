@@ -200,6 +200,10 @@ li.active::after{
     width: 10px;
 }
 
+.hiddennav .freewbtn{
+    display: none;
+}
+
 @keyframes navLinkFade {
     from {
         opacity: 1;

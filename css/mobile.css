@@ -386,6 +386,21 @@
     #lineblocks .block span{
         margin-top: 22px;
     }
+
+    .btnshadow{
+        margin-left: 0;
+    }
+    
+    .hiddennav .freewbtn{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .hiddennav .button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 624px){
